@@ -1,0 +1,81 @@
+
+@import "../views/MemberIndex.scss";
+
+.MemberCon {
+  .con {
+    background: none;
+    box-shadow: none;
+    border-bottom:none;
+  }
+  .autherItem {
+    display: flex;
+    color: #666666;
+    background-color: #fff;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 0 5px rgb(0, 0, 0 ,27%);
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .autherPhoto {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 10px 0 0px;
+    border: solid 1px #09661f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .inf {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    width: calc(100% - 81px);
+
+    .name {
+      font-size: 18px;
+      font-weight: 900;
+      color: #000;
+    }
+  }
+
+  .data {
+    display: flex;
+  }
+
+  .articleAndFans {
+    margin-right: 15px;
+    padding-right: 15px;
+    border-right: 1px solid #666666;
+  }
+
+  .accuracy {
+    color: #ff9300;
+    .percent {
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+  .del{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 14px;
+    height: 14px;
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .news{
+    background-color: #BE272D;
+    border-radius: 10px;
+    color: #fff;
+    padding: 2px 10px 2px 10px;
+    margin: 5px 0px;
+
+  }
+}

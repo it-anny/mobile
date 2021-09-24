@@ -1,21 +1,23 @@
-<template src="./Home.html"></template>
+<template src="./Article.html"></template>
 
 <script>
 import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
 import mainMenu from "@/components/MainMenu.vue";
+import SearchBar from "@/components/SearchBar.vue";
 
 export default {
-  name: "Home",
+  name: "Article",
   components: {
     Header,
     Footer,
     mainMenu,
+    SearchBar,
   },
 
   data() {
     return {
-      systemMsg: [
+      banner: [
         {
           id: 1,
           type: "欧联杯",
@@ -25,6 +27,10 @@ export default {
           away: "德黑兰独立",
           homePic: require("../assets/07.png"),
           awayPic: require("../assets/15.jpg"),
+          title: "【探长甄选福利↑】​中超19:30北京国安-河北队王牌归来！",
+          autherPic: require("../assets/20191226094626.jpg"),
+          name: "5亿探长",
+          postTime: "2021/05/03 13:12:22",
         },
         {
           id: 2,
@@ -35,6 +41,10 @@ export default {
           away: "德黑兰独立",
           homePic: require("../assets/15.jpg"),
           awayPic: require("../assets/16.jpg"),
+          title: "【探长甄选福利↑】​中超19:30北京国安-河北队王牌归来！",
+          autherPic: require("../assets/3372795_20210323110130.jpg"),
+          name: "5亿探长",
+          postTime: "2021/05/03 13:12:22",
         },
         {
           id: 3,
@@ -45,6 +55,10 @@ export default {
           away: "赫尔蒙德",
           homePic: require("../assets/15.jpg"),
           awayPic: require("../assets/16.jpg"),
+          title: "【探长甄选福利↑】​中超19:30北京国安-河北队王牌归来！",
+          autherPic: require("../assets/2155966_20170718115016.jpg"),
+          name: "5亿探长",
+          postTime: "2021/05/03 13:12:22",
         },
       ],
     };
@@ -52,50 +66,33 @@ export default {
 };
 </script>
 
-<style lang="scss" src="./Home.scss" scoped></style>
+<style lang="scss" src="./Article.scss" scoped></style>
 <style lang="scss">
-.HomeWrap {
-  .el-carousel__item {
-    display: flex;
-    justify-content: center;
-    flex-flow: column;
+.ArticleWrap {
+  .el-carousel {
+    width: 100%;
     height: 100%;
-  }
-
-  .el-carousel--horizontal {
-    height: 100%;
-  }
-
-  .el-carousel__arrow {
-    background: none;
-    font-size: 2em;
-  }
-
-  .el-carousel__arrow--left {
-    left: 1%;
-  }
-
-  .el-carousel__arrow--right {
-    right: 1%;
+    position: relative;
   }
 
   .el-carousel__indicators--outside {
     position: absolute !important;
-    left: 0 !important;
-    bottom: 0% !important;
     width: 100% !important;
+    left: 0 !important;
+    bottom: 0 !important;
     button {
       opacity: 0.7;
       background-color: #fff;
     }
-    .el-carousel__button {
-      padding: 0;
-      width: 15px;
-      height: 15px;
-      border-radius: 50%;
-      background-color: #fff;
-      margin: 0px;
-    }
+  }
+
+  .el-carousel__button {
+    padding: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 0px;
   }
 }
 </style>

@@ -1,0 +1,20 @@
+<header class="header" id="top">
+    <div class="mLogo">
+        <router-link to="/"><img src="../assets/mobile_logo.svg"></router-link>
+    </div>
+    <div class="menuBtn" @click="openMenu">
+        <div class="menu-line">
+
+        </div>
+
+    </div>
+    <transition name="fade">
+        <mainMenu v-if="show">
+        </mainMenu>
+    </transition>
+    <a v-scroll-to="{ el: '#top' }" class="gotop">
+    <font-awesome-icon class="fontAwesomeIcon" :icon="['fa', 'caret-up']" />
+
+    </a>
+
+</header>

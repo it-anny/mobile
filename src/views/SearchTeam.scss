@@ -1,0 +1,79 @@
+
+
+.SearchTeam{
+    .teamItmeWrap{
+        background-color: #fff;
+        margin: 10px;
+        border-radius: 4px;
+        box-shadow: 0 0 5px rgb(0 0 0 / 27%);
+        padding: 10px;
+        font-weight: 700;
+    }
+
+    .doc{
+        display: flex;
+        align-items: center;
+        border-bottom: 1px #ccc solid;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+    }
+
+    .databtn{
+        min-width: 120px;
+        background-color: #EFEFEF;
+        padding: 5px;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .databtn:hover{
+        background-color: #FF9300;
+        color: #fff;
+    }
+
+    .name{
+        font-size: 18px;
+    }
+
+    .logo{
+        box-shadow: 0 0 5px rgb(0 0 0 / 27%);
+        width: 70px;
+        height: 70px;
+        padding: 3px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 0 10px;
+    }
+    
+.articleListWrpa{
+    height: 8em;
+    overflow: hidden;
+
+}
+    .articleList{
+    list-style:disc;
+    margin-left: 1.5em;
+    .date{
+        color: #969696;
+    }
+
+    li{
+        margin:2px 0;
+    }
+}
+
+.showMore{
+    margin-top: 15px;
+    text-align: right;
+    color: #09661F;
+}
+.showMore .fontAwesomeIcon {
+    margin-right: 5px;
+
+}
+
+.sideDown{
+    transition: all 0.5s ease-in-out;
+    
+}
+}

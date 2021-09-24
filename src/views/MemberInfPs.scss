@@ -1,0 +1,39 @@
+
+@import "../views/MemberIndex.scss";
+
+.MemberCon {
+  .changePsWrap {
+    width: 316px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+    padding-bottom: 15px;
+    
+    p{
+      margin: 5px 0;
+    }
+  }
+
+  .psRuleWrap {
+    display: flex;
+    font-size: 12px;
+    margin: 15px 0;
+  }
+
+  .exclamation-icon {
+    color: #fff;
+    background-color: #ff9300;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    margin-left: 40px;
+  }
+  .psRule {
+    width: 200px;
+  }
+}

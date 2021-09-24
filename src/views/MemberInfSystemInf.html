@@ -1,0 +1,33 @@
+<div class="MemberWrap AllCon">
+
+    <Header>
+    </Header>
+    <main class="MemberCon clearfix">
+        <div class="pageTitle">
+            <font-awesome-icon class="fontAwesomeIcon" :icon="['far', 'user']" />
+            <router-link to="MemberIndex">會員專區</router-link>
+            <font-awesome-icon :class="" :icon="['fa', 'chevron-right']" />系统讯息
+        </div>
+        <div class="con">
+            <BasicInf>
+            </BasicInf>
+
+
+            <p class="mamberTit">系统讯息</p>
+            <el-collapse>
+                <el-collapse-item :title=item.title :name=item.id v-for="item in msg">
+                  <div> {{item.con}}</div>
+                </el-collapse-item>
+    
+                
+                
+              </el-collapse>
+
+           </div>
+
+
+    </main>
+    <Footer>
+
+    </Footer>
+</div>

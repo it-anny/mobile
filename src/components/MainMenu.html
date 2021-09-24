@@ -1,0 +1,78 @@
+<div class="mainMenuWrap">
+    <div class="mainMenu">
+        <div class="Home">
+
+            <div class="homeWrap" @click="$parent.goToPage('Home')">
+                <font-awesome-icon class="fontAwesomeIcon" :icon="['fa', 'home']" />
+            </div>
+            <div @click="$parent.goToPage('Home')">首頁</div>
+        </div>
+        <div class="ThemeList">
+            <p class="title">
+                及時比分
+            </p>
+            <div class="Theme">
+                <div class="item" @click="$parent.goToPage('LiveScore')">
+                    <div>
+                        <font-awesome-icon class="fontAwesomeIcon" :icon="['fa', 'futbol']" />
+                    </div>
+                    <p>足球</p>
+                </div>
+                <div class="item" @click="$parent.goToPage('LiveScore')">
+                    <div>
+                        <font-awesome-icon class="fontAwesomeIcon" :icon="['fa', 'futbol']" />
+                    </div>
+                    <p>足球</p>
+                </div>
+                <div class="item" @click="$parent.goToPage('LiveScore')">
+                    <div>
+                        <font-awesome-icon class="fontAwesomeIcon" :icon="['fa', 'futbol']" />
+                    </div>
+                    <p>足球</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="Term">
+            <div class="inf" @click="$parent.goToPage('Article')">
+                <a>
+                    <font-awesome-icon class="fontAwesomeIcon" :icon="['fa', 'chart-bar']" />
+                </a>
+                <a>情报中心</a>
+            </div>
+            <div class="menber" @click="$parent.goToPage('MemberIndex')">
+                <a>
+                    <font-awesome-icon class="fontAwesomeIcon" :icon="['fa', 'user']" />
+                </a>
+                <a>會員專區</a>
+            </div>
+
+        </div>
+
+        <div class="Lan">
+            <a class="SC active">
+                简体中文
+            </a>
+            <a class="EN">
+                English
+            </a>
+            <a class="TV">
+                Tiếng Việt
+            </a>
+
+        </div>
+
+        <div class="footInMenu">
+            <a href="#">
+                <div class="copy">
+                    <img src="../assets/ICON-logo-05.png" class="appIcon">
+                    <p class="bottomBarW">想查看更多？</p>
+                    <p class="bottomBarG">soikeo app 立即下载
+                        <font-awesome-icon class="fontAwesomeIcon" :icon="['fa', 'cloud-download-alt']" />
+                    </p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+</div>

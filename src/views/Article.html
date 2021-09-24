@@ -1,0 +1,215 @@
+<div class="ArticleWrap AllCon">
+
+    <Header>
+    </Header>
+    <SearchBar>
+    </SearchBar>
+    <main class="ArticleMainCon clearfix">
+        <div class="topBanner">
+            <img src="../assets/EventBannerBg.jpg" class="topBannerBg">
+            <div class="topBannerCon">
+                <div class="gradientBg"
+                    style="background: linear-gradient(90deg, rgb(13, 100, 29), rgba(29, 29, 29, 0));">
+                    <el-carousel indicator-position="outside" arrow="never" :autoplay="false" height="100%">
+                        <el-carousel-item v-for="item in banner" :key="item.id">
+                            <router-link to="ArticlePage">
+                                <div class="topInf">
+                                    <div class="type">{{item.type}}<span class="status">{{item.status}})</span><span
+                                            class="time">{{item.time}}</span></div>
+                                    <div class="teamsWrap">
+                                        <div class="homeTeam">
+                                            <div class="homePic"><img :src="item.homePic"></div>
+                                            <div class="home">{{item.home}}</div>
+
+                                        </div>
+
+                                        <div class="awayTeam">
+                                            <div class="awayPic"><img :src="item.awayPic"></div>
+                                            <div class="away">{{item.away}}</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Inf">
+                                    <div class="title">{{item.title}}</div>
+                                    <router-link to="AutherPage">
+                                        <div class="autherInf">
+                                            <div class="photo">
+                                                <img :src="item.autherPic">
+                                            </div>
+                                            <div class="nameAndTime">
+                                                <div class="name">{{item.name}}</div>
+                                                <div class="time">{{item.postTime}}</div>
+                                            </div>
+                                        </div>
+                                    </router-link>
+                                </div>
+                            </router-link>
+                        </el-carousel-item>
+                    </el-carousel>
+                </div>
+            </div>
+        </div>
+
+        <div class="contents">
+            <div class="articleItem">
+                <router-link to="ArticlePage" class="mobileMainImg item">
+                    <div class="addToFav">
+                        <font-awesome-icon class="fontAwesomeIcon" :icon="['fa', 'star']" />
+                    </div>
+                    <div class="mainColor" style="background: rgb(25, 55, 89);">
+                    </div>
+                    <div class="bgImg">
+                    </div>
+                    <div class="leagueImagBg">
+                        <img class="leagueImag" src="../assets/20190423203352.jpg">
+                    </div>
+                    <div class="teams">
+                        <div class="logos">
+                            <div class="teamWrap">
+                                <div class="team">
+                                    <img class="" src="../assets/15.jpg">
+                                </div>
+                                <p>德黑兰独立</p>
+                            </div>
+                            <div class="vs">VS</div>
+                            <div class="teamWrap">
+                                <div class="team">
+                                    <img class="" src="../assets/16.jpg">
+                                </div>
+                                <p>赫尔蒙德</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layer"
+                        style="background: linear-gradient(90deg, rgb(25, 55, 89), rgba(89, 89, 89, 0));">英超 04/17 02:00
+                    </div>
+                </router-link>
+                <div class="con">
+                    <router-link to="ArticlePage" class="title">造访福地！阿贾克斯最近6次在意大利比赛保持不败阿贾克斯最近6次在意大利</router-link>
+                    <div class="autherInf">
+                        <p>皇马魔笛 </p>
+                        <p>
+                            <span class="times">2021/05/03 13:12:22</span>
+                            <span class="visits">浏览人次：99999</span>
+                        </p>
+                    </div>
+
+                    <div class="changeLan">
+                        <font-awesome-icon class="fontAwesomeIcon" :icon="['fa', 'exchange-alt']" />顯示原文
+                    </div>
+
+                </div>
+                <span class="lock">
+                    <font-awesome-icon class="fontAwesomeIcon" :icon="['fa', 'lock']" />
+                </span>
+            </div>
+
+            <div class="articleItem">
+                <router-link to="ArticlePage" class="mobileMainImg item">
+                    <div class="addToFav">
+                        <font-awesome-icon class="fontAwesomeIcon" :icon="['fa', 'star']" />
+                    </div>
+                    <div class="mainColor" style="background: rgb(25, 55, 89);">
+                    </div>
+                    <div class="bgImg">
+                    </div>
+                    <div class="leagueImagBg">
+                        <img class="leagueImag" src="../assets/20190423203352.jpg">
+                    </div>
+                    <div class="teams">
+                        <div class="logos">
+                            <div class="teamWrap">
+                                <div class="team">
+                                    <img class="" src="../assets/15.jpg">
+                                </div>
+                                <p>德黑兰独立</p>
+                            </div>
+                            <div class="vs">VS</div>
+                            <div class="teamWrap">
+                                <div class="team">
+                                    <img class="" src="../assets/16.jpg">
+                                </div>
+                                <p>赫尔蒙德</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layer"
+                        style="background: linear-gradient(90deg, rgb(25, 55, 89), rgba(89, 89, 89, 0));">英超 04/17 02:00
+                    </div>
+                </router-link>
+                <div class="con">
+                    <router-link to="ArticlePage" class="title">造访福地！阿贾克斯最近6次在意大利比赛保持不败阿贾克斯最近6次在意大利</router-link>
+                    <div class="autherInf">
+                        <p>皇马魔笛 </p>
+                        <p>
+                            <span class="times">2021/05/03 13:12:22</span>
+                            <span class="visits">浏览人次：99999</span>
+                        </p>
+                    </div>
+
+                    <div class="changeLan">
+                        <font-awesome-icon class="fontAwesomeIcon" :icon="['fa', 'exchange-alt']" />顯示原文
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="articleItem">
+                <router-link to="ArticlePage" class="mobileMainImg item">
+                    <div class="addToFav">
+                        <font-awesome-icon class="fontAwesomeIcon" :icon="['fa', 'star']" />
+                    </div>
+                    <div class="mainColor" style="background: rgb(25, 55, 89);">
+                    </div>
+                    <div class="bgImg">
+                    </div>
+                    <div class="leagueImagBg">
+                        <img class="leagueImag" src="../assets/20190423203352.jpg">
+                    </div>
+                    <div class="teams">
+                        <div class="logos">
+                            <div class="teamWrap">
+                                <div class="team">
+                                    <img class="" src="../assets/15.jpg">
+                                </div>
+                                <p>德黑兰独立</p>
+                            </div>
+                            <div class="vs">VS</div>
+                            <div class="teamWrap">
+                                <div class="team">
+                                    <img class="" src="../assets/16.jpg">
+                                </div>
+                                <p>赫尔蒙德</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layer"
+                        style="background: linear-gradient(90deg, rgb(25, 55, 89), rgba(89, 89, 89, 0));">英超 04/17 02:00
+                    </div>
+                </router-link>
+                <div class="con">
+                    <router-link to="ArticlePage" class="title">造访福地！阿贾克斯最近6次在意大利比赛保持不败阿贾克斯最近6次在意大利</router-link>
+                    <div class="autherInf">
+                        <p>皇马魔笛 </p>
+                        <p>
+                            <span class="times">2021/05/03 13:12:22</span>
+                            <span class="visits">浏览人次：99999</span>
+                        </p>
+                    </div>
+
+                    <div class="changeLan">
+                        <font-awesome-icon class="fontAwesomeIcon" :icon="['fa', 'exchange-alt']" />顯示原文
+                    </div>
+
+                </div>
+                <span class="lock">
+                    <font-awesome-icon class="fontAwesomeIcon" :icon="['fa', 'lock']" />
+                </span>
+            </div>
+        </div>
+
+    </main>
+    <Footer>
+
+    </Footer>
+</div>

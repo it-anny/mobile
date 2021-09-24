@@ -1,0 +1,74 @@
+.basicInf {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  border-bottom: 1px #cecece solid;
+  .name {
+    font-size: 16px;
+  }
+  .lv {
+    font-size: 12px;
+  }
+  .photo {
+    width: 55px;
+    height: 55px;
+    border: 1px solid #09661f;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 10px;
+  }
+
+  .point {
+    .highlight {
+      font-size: 16px;
+    }
+  }
+}
+
+.buyPoint,
+.pointList {
+  background-color: #ff9300;
+  display: inline-block;
+  border-radius: 15px;
+  padding: 0 8px;
+  color: #fff;
+  font-size: 12px;
+  margin: 3px;
+}
+
+@media (max-width: 340px) {
+  .con.publish {
+    .basicInf {
+      padding: 5px;
+      .inf{
+        display: flex;
+        .name{
+          margin-right: 10px;
+        }
+      }
+      .photo {
+        display: none;
+      }
+    }
+  }
+}
+
+
+@media (min-width: 341px) {
+  .con.publish {
+    .basicInf {
+      padding: 5px;
+      .inf{
+        display:block;
+        .name{
+          margin-right: 10px;
+        }
+      }
+      .photo {
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+      }
+    }
+  }
+}

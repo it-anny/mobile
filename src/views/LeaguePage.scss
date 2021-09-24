@@ -1,0 +1,151 @@
+@import "../views/Article.scss";
+
+.LeaguePage {
+  .contents {
+    margin: 10px;
+    background-color: #fff;
+    padding: 10px;
+  }
+
+  .leagueInf {
+    text-align: center;
+    margin-bottom: 35px;
+  }
+
+  .logo,
+  .neame {
+    position: relative;
+    z-index: 9;
+  }
+  .shadowWrap {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: -25px;
+    z-index: 1;
+  }
+  .shadow {
+    filter: drop-shadow(0px 15px 15px rgba(0, 0, 0, 0.205));
+    border-radius: 50%;
+    height: 65px;
+    width: 100%;
+    background-color: #fff;
+  }
+
+  .gameArticle {
+    margin-top: 35px;
+    margin-bottom: 20px;
+  }
+
+  .shadowtTop {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    width: 110%;
+    height: 75px;
+    background-color: #fff;
+    z-index: 999;
+    border-radius: 50%;
+  }
+  .date {
+    text-align: center;
+  }
+
+  .teams {
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .vs {
+      width: 24px;
+      text-align: center;
+    }
+    .teamWrap {
+      width: calc(50% - 12px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .team {
+        margin: 10px;
+        width: 36px;
+      }
+    }
+
+    .teamWrap:first-child {
+      justify-content: flex-end;
+    }
+  }
+  .teamWrap:last-child {
+    justify-content: flex-start;
+  }
+
+  .articleItem {
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    border-bottom: 1px #808080 solid;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0;
+
+
+
+    .titleWrap {
+      display: flex;
+      align-items: center;
+      justify-items: center;
+
+      .title {
+        margin-bottom: 0;
+      }
+      
+    }
+    .addToFav {
+      position: relative;
+      border: 2px #bcbcbc solid;
+      flex-flow: column;
+      width: 40px;
+
+      height: 44px;
+      right: 0;
+      color: #bcbcbc;
+
+      .fontAwesomeIcon {
+        font-size: 16px;
+        margin-bottom: 3px;
+        margin-top: 3px;
+      }
+    }
+    .autherInf {
+      display: block;
+      justify-content: space-between;
+      margin-top: 10px;
+
+      .side {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+      }
+    }
+    .con {
+
+      .times{
+      margin-right: 15px;}
+
+        .visits {
+        margin-left: 0;
+      }
+      max-width: calc(100% - 68px);
+      .lockFlow {
+        display: inline-block;
+      }
+      .lock {
+        width: 1.8em;
+        height: 1.8em;
+        font-size: 12px;
+      }
+    }
+  }
+}

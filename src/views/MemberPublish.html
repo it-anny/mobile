@@ -1,0 +1,35 @@
+<div class="MemberWrap AllCon">
+
+    <Header>
+    </Header>
+    <main class="MemberCon clearfix">
+        <div class="pageTitle">
+            <font-awesome-icon class="fontAwesomeIcon" :icon="['far', 'user']" />
+            <router-link to="MemberIndex">會員專區</router-link>
+            <font-awesome-icon :class="" :icon="['fa', 'chevron-right']" />文章管理
+        </div>
+        <div class="con publish">
+            <BasicInf>
+            </BasicInf>
+
+
+            <p class="mamberTit">文章管理</p>
+            <div class="articleManageBtn">
+                <router-link class="in" to="MyPublish">我的文章</router-link>
+                <router-link to="MemberPublishNew">新增文章</router-link>
+                <router-link to="MemberDraft">草 稿</router-link>
+            </div>
+            <div class="myArticleCon">
+                <router-link to="MyPublish"><font-awesome-icon class="fontAwesomeIcon" :icon="['fa', 'newspaper']" />已发布</router-link>
+                <router-link to="MyReject"><font-awesome-icon class="fontAwesomeIcon" :icon="['fa', 'remove-format']" />已驳回</router-link>
+            </div>
+
+
+           </div>
+
+
+    </main>
+    <Footer>
+
+    </Footer>
+</div>

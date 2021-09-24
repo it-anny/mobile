@@ -1,0 +1,98 @@
+@import "../views/GameDataAnalysis.scss";
+
+.GameDataInformationCon {
+  .articleItem {
+    margin: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.27);
+    padding: 10px;
+    background-color: #fff;
+    display: flex;
+  }
+  .articleMain{
+    margin-right: 10px;
+  }
+  .title {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #000;
+    display: block;
+  }
+  .excerpt {
+    display: block;
+    color: #808080;
+    margin-bottom: 15px;
+  }
+  .autherInf {
+    border-left: 7px #09661f solid;
+    padding-left: 10px;
+  }
+
+  .autherInf {
+    display: block;
+    font-size: 12px;
+  }
+
+  .visits{
+    display:block;
+  }
+
+  .btnSide{
+      display: flex;
+      flex-flow: column;
+      justify-content: space-between;
+  }
+
+  .addToFav {
+    position: relative;
+    border: 1px #bcbcbc solid;
+    flex-flow: column;
+    width: 35px;
+    right: 0;
+    color: #bcbcbc;
+    text-align: center;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .fontAwesomeIcon{
+        font-size: 18px;
+    }
+    svg{
+        margin: 3px;
+    }
+  }
+
+  .addToFav.in{
+      background-color: #ff9300;
+      color:#fff;
+      border: 2px #ff9300 solid;
+  }
+
+
+  .lock {
+    border: 2px #ff9300 solid;
+    border-radius: 50%;
+    width: 1.6em;
+    height: 1.6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff9300;
+    margin-left: 5px;
+    font-size: 16px;
+  }
+  .changeLan{
+    margin-top: 5px;
+    display: flex;
+    
+    .fontAwesomeIcon{
+      background-color: rgb(43, 163, 191) ;
+      color: #fff;
+      border-radius:2px ;
+      padding: 3px;
+      margin-right: 5px;
+      
+    }
+  }
+}

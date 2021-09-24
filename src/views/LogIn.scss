@@ -1,0 +1,87 @@
+@import "../views/MemberIndex.scss";
+.MemberCon {
+  min-height: calc(100vh - 135px - 44px);
+  .mamberTit {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+  }
+
+  .logInAndSignUp {
+    border-top: 1px solid #ccc;
+    .loginId,
+    .loginPS,
+    .loginSubmit {
+      margin: 0 auto;
+      display: block;
+      margin: 10px;
+      width: calc(100% - 20px);
+    }
+    .thirdPartysTit {
+      font-size: 18px;
+      font-weight: 700;
+      text-align: center;
+      margin: 0px 15px 25px 15px;
+      width: calc(100% - 30px);
+    }
+    .thirdPartys {
+      margin: 25px 15px 15px 15px;
+      display: flex;
+      flex-wrap: wrap;
+      a {
+        flex: 1;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-self: center;
+      }
+      .facebook {
+        border-right: 1px #ccc solid;
+        border-left: 1px #ccc solid;
+      }
+    }
+
+    .signUp {
+      margin: 50px;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    .emailGruop,
+    .signUpGruop {
+      position: relative;
+    }
+    .emailGruop {
+      margin: 0px 0 5px 0;
+    }
+
+    .emailVerificationGruop{
+      display: flex;
+      flex-flow:column;
+      margin: 10px 10px;
+    }
+    
+    
+    button.verificationCodeEmail {
+      position: relative;
+      margin-left:auto;
+      margin-right: 12px;
+      
+    }
+    input {
+      width: calc(100% - 12px);
+    }
+    .star {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+    
+    .signUpGruop{
+      margin: 5px 10px;
+    }
+
+    
+  }
+}

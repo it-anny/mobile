@@ -1,0 +1,450 @@
+
+// @import "../views/Article.scss";
+
+.ArticlePageWrap {
+
+    .visits{
+        text-align: right;
+        margin-bottom: 15px;
+
+    }
+
+    .AticleConHead{
+        margin: 10px 10px;
+    }
+
+    .titles{
+        display: flex;
+        align-items: top;
+        
+        h1{
+            font-size: 1.5em;
+        }
+
+
+    }
+    
+    .addToFav{
+        margin-top: 0px;
+        margin-left: 10px;
+        text-align:center;
+        p{
+            font-size: 1em;
+
+        }
+        }
+
+        .addToFav:hover{
+            color: #FF9300;
+            .star{
+                border-color:#FF9300;
+                background-color: #FF9300;
+                color: #fff;
+                
+            }
+            
+        }
+
+    .star{
+        padding: 5px;
+        border-radius: 50%;
+        border:2px #BCBCBC solid;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.1em;
+        color: #BCBCBC;
+    }
+
+    .subInf{
+        background-color: #fff;
+        box-shadow: 0 0 13px rgba(0, 0, 0, 0.219);
+
+    }
+
+    .gameInf{
+        display: flex;
+    justify-content: space-between;
+    position: relative;
+    }
+
+    .league p,.finish p{
+        color: #fff;
+        padding: 1px 7px;
+      
+        min-width: 100px;
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .league,.finish{
+        display: flex;
+    }
+    .league p{
+        background-color: #ff9300;
+    }
+    .finish p {
+        background-color: #be272d;
+        text-align: right;
+    }
+ .league::after {
+        border-width: 0px 0px 22px 10px;
+        content: " ";
+        border-color: transparent transparent transparent #ff9300;
+        border-style: solid solid solid solid;
+        height: 0;
+        width: 0px;
+        display: block;
+    }
+    .finish::before {
+        border-width:0px 10px 22px 0px;
+        content: " ";
+        border-color: transparent #be272d transparent transparent;
+        border-style: solid solid solid solid;
+        height: 0;
+        width: 0px;
+        display: block;
+    }
+
+    .teams,.left, .right{
+        display: flex;
+    }
+
+    .left{
+        justify-content: flex-end;
+
+    }
+
+    .left, .right{
+        width: calc(50% - 1.5em);
+    }
+
+
+    .vs{
+        width: 3em;
+        text-align: center;
+    }
+
+    .teams{
+        margin:20px 0;
+        justify-content: center;
+    }
+
+    .teamScore{
+        width: 3em;
+        text-align: center;
+    }
+
+    .win{
+        color: #C1272D;
+        font-weight: 500;
+    }
+
+    .timeAndFunction{
+        margin: 10px;
+        border-top:1px solid #CECECE;
+        border-bottom:1px solid #CECECE;
+        padding: 5px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+    }
+
+    .function{
+        display: flex;
+        align-items: center;
+        
+        position: relative;
+        .fontAwesomeIcon{
+            font-size: 16px;
+            margin-right: 3px;
+        }
+        span{
+            display: inline-block;
+            margin-left: 3px;
+        }
+        a:link{
+            color: #4D4D4D;
+        }
+    }
+    .functionList{
+        font-size: 12px;
+        position:absolute;
+        background-color: #fff;
+        border: 1px #CECECE solid;
+        top: 22px;
+        right: -5px;
+        z-index: 999;
+        width:120px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.295);
+        div{
+            border-bottom: 1px #CECECE solid;
+            padding: 7px 6px;
+        }
+
+        div:nth-child(3){
+            border-bottom:none;
+            padding-bottom: 0;
+        }
+    }
+
+    .version{
+        a{
+        display: block;
+        padding: 2px;
+        margin-left: 16px;
+        }
+
+        .in{
+            background-color: #eae7e7
+        }
+    }
+
+    .autherInf{
+        display: flex;
+        padding: 8px 0;
+
+        .name{
+            font-size: 18px;
+            font-weight: 500;
+            
+        }
+    }
+
+    .autherFun{
+        color: #09661F;
+    }
+        
+    .autherPhoto{
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin:0 10px;
+        border:solid 1px #09661F;
+    }
+    .follow{
+    background-color: #ff9300;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    padding: 1px 6px 2px 8px;
+    letter-spacing: .2em;
+    margin:0 5px;
+    width: auto;
+}
+.translater{
+    margin: 10px;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .copy, .origenalLan{
+        display: inline-block;
+    }
+
+    .fontAwesomeIcon{
+        margin-right: 5px;
+    }
+
+    .copy{
+        margin-right: 10px;
+    }
+    .origenalLan{
+        color: #fff;
+        border-radius: 4px;
+        padding:1px 5px;
+        background-color: #2BA3BF;
+
+    }
+
+    // .origenalLan.cn{
+    //     background-color: #f27355;
+    // }
+    // .origenalLan.en{
+    //     background-color: #2ba3bf;
+    // }
+    // .origenalLan.vt{
+    //     background-color: #09661f;
+    // }
+
+
+    }
+
+    .articleCon{
+        margin: 10px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.295);
+        background-color: #fff;
+        padding: 10px;
+
+    }
+
+    .paragraphTit{
+        margin-top: 15px;
+        margin-bottom: 5px;
+        padding: 0 0 0 5px;
+        border-left: 7px solid #09661f;
+    }
+
+    .paragraphTit:first-child{
+        margin-top: 0;
+    }
+
+    .howToPlay {
+        display: flex;
+        border-top: 1px #c9c9c9 solid;
+        border-bottom: 1px #c9c9c9 solid;
+        width: 100%;
+        justify-content: center;
+        margin-top: 25px;
+      }
+
+      .prediction,
+      .howToPlayCon {
+        padding: 10px;
+        width: 50%;
+      }
+
+      .prediction {
+        text-align: center;
+        color: #be272d;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .prediction .fa-trophy {
+        color: #ffb820;
+        font-size: 32px;
+      }
+
+      .howToPlayCon .fa-gamepad {
+        color: #4d4d4d;
+        font-size: 19px;
+        margin-right: 5px;
+        vertical-align: bottom;
+      }
+
+      .howToPlayCon .fa-square{
+          color: #2BA3BF;
+          margin-right: 3px;
+      }
+
+      .playDetails {
+        padding-left: 32px;
+      }
+
+      .line {
+        border-right: 1px #cecece solid;
+      }
+
+
+      .raise {
+        background-color: #efefef;
+        text-decoration: none;
+        padding: 5px;
+        font-size: 12px;
+        line-height: 12px;
+      }
+
+      .raiseWrap {
+        display: flex;
+        padding-top: 15px;
+      }
+
+      .raiseWrap::after {
+        border-width: 12px 0 12px 12px;
+        content: " ";
+        border-color: transparent #efefef transparent #efefef;
+        border-style: solid solid solid solid;
+        height: 0;
+        width: 0px;
+        display: block;
+      }
+
+      .raise {
+        color: #000;
+      }
+
+      .articleBottom {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .lockOnWrap{
+        overflow: hidden;
+        color: #FF9300;
+
+        .locks {
+            cursor: pointer;
+            width: 35px;
+            height: 35px;
+            border: 3px #FF9300 solid;
+            border-radius: 50%;
+            position: relative;
+            color: #fff;
+            margin-top: -21px;
+            background-color: #fff;
+        }
+
+        .lockOn {
+            border-top: #CECECE solid 1px;
+            margin-top: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: column;
+        }
+
+        .lock , .unlock{
+            width: 40px;
+            height: 20px;
+            position: absolute;
+            animation-duration:2s;
+            animation-iteration-count: infinite;
+            top: calc(50% - 10px);
+            left: calc(50% - 10.5px);
+            background-repeat:no-repeat ;
+            background-position: left;
+        
+        }
+        
+        .lock{
+            animation-name: lock;
+            background-image: url(../assets/lock.svg); 
+        }
+        
+        
+        
+        @keyframes lock {
+            0%{
+                background-image: url(../assets/lock.svg); 
+            }
+            50% {
+                background-image: url(../assets/unlock.svg); 
+            }
+          }
+
+        
+    }
+
+    @media screen and ( max-width:375px ){
+
+        .translater .fontAwesomeIcon{
+            display: none;
+
+        }
+
+        .howToPlayCon .fa-gamepad{
+            display:none
+        }
+        .playDetails{
+           padding: 0; 
+        }
+    
+        
+    }
+
+}
+

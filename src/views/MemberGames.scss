@@ -1,0 +1,82 @@
+
+@import "../views/MemberIndex.scss";
+
+.MemberCon {
+    .eventItem {
+        background-color: #fff;
+        border-bottom: 1px solid #cecece;
+        padding: 5px 10px 10px 10px;
+  
+  
+        .evenHead {
+          color: #878789;
+          display: flex;
+          font-size: 12px;
+  
+          .leftInf,
+          .righrtInf {
+            width: 50%;
+            display: flex;
+            align-items: center;
+          }
+  
+          .righrtInf {
+            justify-content: flex-end;
+          }
+        }
+  
+        .evenTeams {
+          display: flex;
+          margin-top: 15px;
+          color: #333333;
+        }
+  
+        .homeTeam,
+        .awayTeam {
+          width: 45%;
+          display: flex;
+          flex-flow: column;
+          justify-content: center;
+          align-items: center;
+        }
+  
+        .homePic,
+        .awayPic {
+          width: 55px;
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+  
+        .score {
+          width: 10%;
+          display: flex;
+          flex-flow: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          color: #ff9300;
+          font-size: 1.2em;
+          padding-bottom: 1.5em;
+        }
+  
+        .eventname,
+        .timeMD,
+        .timeMD {
+          margin-right: 5px;
+        }
+  
+        .corner,
+        .attention {
+          margin-left: 5px;
+            display: flex;
+            align-items: center;
+          .fontAwesomeIcon{
+              font-size: 22px;
+              margin: 5px;
+          }
+
+        }
+      }
+}

@@ -1,0 +1,162 @@
+@import "../views/MemberIndex.scss";
+@import "../views/MemberPublish.scss";
+@import "../views/Article.scss";
+
+.MemberCon {
+  .newArticleForm {
+    border-top: 1px solid #ccc;
+  }
+  .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 8px 0;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .itemTit {
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    font-weight: 900;
+  }
+
+  .itemForm {
+    display: flex;
+    align-items: stretch;
+    width: calc(100% - 52px);
+
+    .playRule_3{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .correctScoreHome ,.correctScoreAway{
+    width: 4em;
+    margin: 0 10px;
+    }
+
+    input {
+      margin: 0;
+      background: #f7f7f7;
+      border-color: #ccc;
+      border-radius: 4px 0 0 4px;
+    }
+  }
+  
+  .gameChoice {
+    .itemForm input {
+      width: calc(100% - 55px);
+    }
+  }
+
+  .item.tollPoint {
+    line-height: 40px;
+  }
+
+  .toll {
+    margin-right: 15px;
+  }
+  .free {
+    margin-left: 25px;
+  }
+
+  .itemBtn {
+    width: auto;
+    padding: 0 10px;
+    background-color: #fff;
+    border: 1px #cecece solid;
+    color: #333333;
+    margin-right: 10px;
+    border-left: 0;
+    border-radius: 0 4px 4px 0;
+  }
+
+  .item.articleTitle {
+    .itemTit,
+    .itemForm {
+      padding-right: 0;
+      input {
+        width: 100%;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .item.analysisGroup {
+    flex-flow: column;
+    padding: 0;
+    border-bottom: 0;
+    .itemForm {
+      width: 100%;
+    }
+    .homeAnalysis,
+    .awayAnalysis,
+    .comprehensiveAnalysis {
+      width: 100%;
+      height: 12em;
+      border: 1px #ccc solid;
+      margin: 0 10px 10px 10px;
+      border-radius: 4px;
+    }
+  }
+
+  .recommend {
+    flex-flow: column;
+
+    .itemTit {
+      width: 100%;
+      text-align: center;
+      display: block;
+      padding: 20px;
+      box-sizing: border-box;
+      
+    }
+
+    .itemForm{
+      width: calc(100% - 20px);
+      margin: 0 10px;
+    }
+  }
+
+  .el-tabs--border-card{
+    width: 100%;
+  }
+
+  .winningPrediction {
+    .itemForm {
+      width: calc(100% - 80px);
+    }
+  }
+
+  ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #be272d;
+    opacity: 1; /* Firefox */
+    text-align: right;
+  }
+
+  :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #be272d;
+    text-align: right;
+  }
+
+  ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #be272d;
+    text-align: right;
+  }
+
+  .recommendOptions{
+    margin: 10px 0;
+  }
+
+.btnWrap{
+  button{
+  
+    width: auto;
+  }
+}
+
+}

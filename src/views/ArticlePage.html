@@ -1,0 +1,195 @@
+<div class="ArticlePageWrap AllCon">
+
+    <Header>
+    </Header>
+    <SearchBar>
+    </SearchBar>
+    <main class="ArticleMainCon">
+        <div class="contents">
+            <div class="AticleConHead">
+                <p class="visits">浏览人次：9999</p>
+                <div class="titles">
+                    <h1>一面天堂一面地狱！英冠大结局：德比郡生死战送谢周三降级死战送谢周三降级</h1>
+                    <div class="addToFav">
+                        <div class="star">
+                            <font-awesome-icon class="fontAwesomeIcon" :icon="['fa', 'star']" />
+                        </div>
+                        <p>收 藏</p>
+                    </div>
+                </div>
+            </div>
+            <div class="subInf">
+                <div class="gameInf">
+                    <div class="league">
+                        <p>洪都甲秋 04/17 02:00</p>
+                    </div>
+                    <div class="finish">
+                        <p> 完 賽</p>
+                    </div>
+                </div>
+                <div class="teams">
+                    <div class="left win">
+                        <div class="name">
+                            德黑兰独立
+                        </div>
+                        <div class="teamScore ">
+                            1
+                        </div>
+                    </div>
+                    <div class="vs">
+                        VS
+                    </div>
+                    <div class="right">
+                        <div class="teamScore">
+                            0
+                        </div>
+                        <div class="name">
+                            丹麦
+                        </div>
+                    </div>
+                </div>
+                <div class="timeAndFunction">
+                    <div class="time">
+                        最后更新时间：2021/05/12 13:44:25
+                    </div>
+                    <div class="function" @click="openSubOption">
+                        <font-awesome-icon class="fontAwesomeIcon" :icon="['fa', 'cog']" />
+                        <span>更多选项</span>
+                        <transition name="fade">
+                            <div class="functionList" v-if="show">
+                                <div>
+                                    <router-link to="GameDataAnalysis">
+                                        <font-awesome-icon class="fontAwesomeIcon" :icon="['fa', 'chart-line']" />
+                                        前往数据分析
+                                    </router-link>
+                                </div>
+                                <div>
+                                    <font-awesome-icon class="fontAwesomeIcon" :icon="['fa', 'eye']" /> 关注本场赛事
+                                </div>
+                                <div>
+                                    <font-awesome-icon class="fontAwesomeIcon" :icon="['fa', 'chevron-circle-down']" />
+                                    更旧版本
+                                    <div class="version">
+                                        <router-link to="#">
+                                            版本1
+                                        </router-link>
+                                        <router-link to="#">
+                                            版本2
+                                        </router-link>
+                                        <router-link to="#" class="in">
+                                            版本3(当前)
+                                        </router-link>
+                                    </div>
+                                </div>
+                            </div>
+                        </transition>
+                    </div>
+
+                </div>
+                <div class="autherInf">
+                    <div class="autherPhoto">
+                        <router-link to="AutherPage">
+                            <img src="../assets/2155966_20170718115016.jpg">
+                        </router-link>
+                    </div>
+                    <div class="autherFun">
+                        <div class="">
+                            <span class="name">波妹</span>
+                            <button class="follow">
+                                <font-awesome-icon class="fontAwesomeIcon" :icon="['fa', 'thumbtack']" />追踪
+                            </button>
+                        </div>
+                        <div class="cn">
+                            粉絲：150人
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="translater">
+                <span class="copy">本文由系统自动翻译，内容可能不完全精确</span>
+                <span class="origenalLan">
+                    <font-awesome-icon class="fontAwesomeIcon" :icon="['fa', 'exchange-alt']" />顯示原文
+                </span>
+            </div>
+
+
+            <section class="articleCon">
+                <div class="mainCon">
+                    <p class="paragraphTit">主隊分析</p>
+                    <div class="paragraph paragraph_01">
+                        大阪钢巴历史与广岛三箭近十次交锋中胜多败少占据着一定的优势，不过球<span class="hide" style="display:none;opacity: 0;">
+                            队近期状态走势不佳，过去的十场比赛里面仅取得了一场胜利，再加上球队进攻端较为乏力，经常会出现被对方零封的局面，值得一提的是，大阪钢巴捍卫主场出色，十个主场比赛不败率达到了8成之高。</span>
+                    </div>
+                    <p class="paragraphTit">客隊分析</p>
+                    <div class="paragraph paragraph_02">广岛三箭目前排在联赛第8名的位置，球队的整体发挥同样<span class="hide"
+                            style="display:none;opacity: 0;">
+                            不佳，十场比赛里面只取得了两场胜利，不过进攻端上较为稳定，而且阵容中有11名都有取得入球，进攻线上早早实现了多点开花的节奏，其中浅野雄也与柴崎晃诚两名本土球员各斩获3球入账，本场比赛他们将肩负起进球的重任。</span>
+                    </div>
+                    <p class="paragraphTit">综合分析</p>
+                    <div class="paragraph paragraph_03">虽然大阪钢巴历史上交锋占据着一些优势，但是球队近期的发挥相当糟糕，<span class="hide"
+                            style="display:none;opacity: 0;">
+                            再加上进攻端时常出现哑火的迹象，实在难以寄予厚望，反观广岛三箭同样状态不佳，但是好歹进攻有保障，个人认为广岛三箭坐和望赢的机会更大一些。</span></div>
+                </div>
+                <section class="howToPlay hide" style="display:none;opacity: 0;">
+                    <div class="prediction">
+                        <font-awesome-icon class="fontAwesomeIcon" :icon="['fas', 'trophy']" style="color:#FFB820" />
+                        <p class="predictionCon">胜负预测：主队胜</p>
+                    </div>
+                    <div class="line"></div>
+                    <div class="howToPlayCon">
+                        <p>
+                            <font-awesome-icon class="fontAwesomeIcon" :icon="['fas', 'gamepad']" />玩法推荐：大小球
+                        </p>
+                        <p class="playDetails">
+                            <font-awesome-icon class="fontAwesomeIcon" :icon="['fas', 'square']" /> 大或小：大
+                        </p>
+                        <p class="playDetails">
+                            <font-awesome-icon class="fontAwesomeIcon" :icon="['fas', 'square']" /> 大小盘：2/2.5
+                        </p>
+                    </div>
+
+
+                    <!-- <div class="howToPlayCon">
+                        <p>
+                            <font-awesome-icon class="fontAwesomeIcon" :icon="['fas', 'gamepad']" />玩法推荐：让分
+                        </p>
+                        <p class="playDetails"> <font-awesome-icon class="fontAwesomeIcon" :icon="['fas', 'square']" />队伍：主隊</p>
+                        <p class="playDetails"> <font-awesome-icon class="fontAwesomeIcon" :icon="['fas', 'square']" />分数：3</p>
+                    </div> -->
+
+                    <!-- <div class="howToPlayCon">
+                        <p>
+                            <font-awesome-icon class="fontAwesomeIcon" :icon="['fas', 'gamepad']" /> 玩法推荐：波胆
+                        </p>
+                        <p class="playDetails"> <font-awesome-icon class="fontAwesomeIcon" :icon="['fas', 'square']" />主队 3 vs 5 客隊</p>
+                    </div> -->
+
+                </section>
+                <div class="lockOnWrap">
+                    <div class="lockOn" @click="btnIn()">
+                        <div class="locks">
+                            <div class="lock">
+                            </div>
+                            <div class="unlock">
+                            </div>
+                        </div>
+                        <p>支付80点解锁完整内容</p>
+                        <p>
+                            <font-awesome-icon class="fontAwesomeIcon" :icon="['fas', 'angle-double-down']" />
+                        </p>
+                    </div>
+                    <div class="articleBottom">
+                        <div class="raiseWrap"><a class="raise">举 发</a></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </main>
+    <Footer>
+
+    </Footer>
+
+</div>

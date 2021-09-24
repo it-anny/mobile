@@ -1,0 +1,104 @@
+@import "../views/MemberIndex.scss";
+
+.MemberCon {
+  > .con {
+    min-height: calc(100vh - 135px - 46px - 44px);
+  }
+
+  .articleManageBtn {
+    display: flex;
+
+    .in {
+      //   border-bottom: 2px #09661f solid;
+      border-bottom: none;
+      border-right: 1px #7e7e7e solid;
+      border-left: 1px #7e7e7e solid;
+      border-top: 1px #7e7e7e solid;
+      color: #000;
+    }
+    a {
+      flex: 1;
+      padding: 10px;
+      text-align: center;
+      border-top: 1px #cecece solid;
+      border-bottom: 1px #7e7e7e solid;
+      border-right: 1px #cecece solid;
+      border-left: 1px #cecece solid;
+      color: #adadad;
+    }
+
+    a:last-child {
+      border-right: none;
+    }
+    a:first-child {
+      border-left: none;
+    }
+  }
+
+  .myArticleCon {
+    > a {
+      display: block;
+      border-bottom: 1px #cecece solid;
+      padding: 15px;
+
+      .fontAwesomeIcon {
+        color: #2ba3bf;
+        margin-right: 10px;
+        font-size: 18px;
+      }
+    }
+    .con {
+      .title {
+        padding-top: 0;
+        padding-left: 0;
+        padding-bottom: 10px;
+      }
+      .articleTime {
+        color: grey;
+        font-size: 12px;
+        margin-left: 0px;
+        margin-bottom: 10px;
+        display: block;
+      }
+    }
+    .articleItem {
+      border-radius: 0px;
+      box-shadow: none;
+      border: 1px solid #cecece;
+      overflow: visible;
+      .mobileMainImg {
+        overflow: visible;
+      }
+      .addToFav {
+        background-color: #ff9300;
+        color: #fff;
+        width: auto;
+        height: auto;
+        padding: 1px 7px 2px 7px;
+        border-radius: 10px;
+        font-size: 12px;
+        top: -3px;
+        right: -3px;
+
+        .fa-star {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+  .bottomBtnWrap {
+    border-top: 1px solid #cecece;
+    background-color: #efefef;
+    display: flex;
+    justify-content: stretch;
+    text-align: center;
+
+    .bottomBtn {
+      display: block;
+      text-align: center;
+      padding: 5px;
+      flex: 1;
+      cursor: pointer;
+    }
+  }
+}

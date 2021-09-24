@@ -1,0 +1,88 @@
+<div class="MemberWrap AllCon">
+
+    <Header>
+    </Header>
+    <main class="MemberCon clearfix">
+        <div class="pageTitle">
+            <font-awesome-icon class="fontAwesomeIcon" :icon="['far', 'user']" />
+            <router-link to="MemberIndex">會員專區</router-link></router-link><font-awesome-icon :class="" :icon="['fa', 'chevron-right']"/>修改资料
+        </div>
+        <div class="con">
+            <BasicInf>
+            </BasicInf>
+
+
+            <p class="mamberTit">修改资料</p>
+
+            <div class="changePrWrap">
+                <div class="memberImg">
+                    <img src="../assets/photo.svg" width="111"
+                        height="111">
+                </div>
+                <input type="file" name="" id="" value="" name="saveFile" accept="image/*"
+                    @change="" />
+                <div class="form">
+                    <div class="oderLine"><span class="name">
+                            <span class="icon">
+                                <font-awesome-icon :class="" :icon="['fa', 'id-card']" />
+                            </span>名称</span> <input type="text" class="perText appellation">
+                    </div>
+                    <div class="oderLine"><span class="name atName">
+                            <span class="icon">
+                                <font-awesome-icon :class="" :icon="['fa', 'at']" />
+                            </span>个人号</span>
+                        <div class="layoutWrap"><input type="text" class="perText appellation">
+                            <div class="uuidPrompt highlight ">个人号只能修改一次</div>
+                        </div>
+
+                    </div>
+                    <div class="oderLine" style=""><span class="name" style="align-self: start; margin-top: 10px;">
+                            <span class="icon">
+                                <font-awesome-icon :class="" :icon="['fa', 'mobile-alt']" />
+                            </span>手机
+                        </span>
+                        <div class="layoutWrap">
+                            <vue-country-intl></vue-country-intl>
+
+                            <input type="text" class="perText phone">
+                            <el-button type="text" @click="open" class="verifyBtn">
+                                <font-awesome-icon :class="" :icon="['fa', 'user-check']" />取得驗證碼
+                            </el-button>
+                        </div>
+                        <div class="verifyCodeWrap">
+                            <span class="verifyCodeName">驗證碼</span>
+                            <div class="verifyCode">
+                                <input type="text">
+                            </div>
+                            <el-button @click="" class="verifyBtn" type="text">
+                                <font-awesome-icon :class="" :icon="['fa', 'check-circle']" />驗證
+                            </el-button>
+    
+                        </div>
+                    </div>
+                    <div class="oderLine" style="align-items: flex-start">
+                        <span class="name" style="margin-top: 5px;"><span class="icon">
+                                <font-awesome-icon :class="" :icon="['fa', 'user']" />
+                            </span>简介 </span>
+                        <div class="layoutWrap"><textarea class="interText" maxlength="100"> </textarea>
+                            <span class="highlight limit">*100字以內</span>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+
+
+    </main>
+    <Footer>
+
+    </Footer>
+</div>

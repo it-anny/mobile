@@ -1,0 +1,65 @@
+
+
+.SearchAuther {
+  .autherItemWrap {
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgb(0 0 0 / 27%);
+    padding: 10px;
+
+    .doc {
+      display: flex;
+      font-weight: 700;
+      font-size: 12px;
+    }
+  }
+  .autherPhoto {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 10px;
+    border:solid 1px #09661F;
+  }
+
+  .name {
+    font-size: 18px;
+    color: #333333;
+  }
+
+  .accuracy {
+    color: #09661f;
+  }
+
+  .btnWrap {
+    margin-bottom: 0;
+  }
+
+  .allArticle,
+  .follow {
+    width: calc(50% - 5px);
+    background-color: #efefef;
+    padding: 7px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+
+    .fontAwesomeIcon{
+        margin-right: 5px;
+
+    }
+
+  }
+  .allArticle:hover,
+  .follow:hover {
+    background-color: #ff9300;
+    color: #fff;
+  }
+
+  .allArticle {
+    margin-right: 10px;
+    color: #333333;
+  }
+  
+}

@@ -1,0 +1,180 @@
+
+@import "../views/MemberIndex.scss";
+
+.MemberCon {
+    .changePrWrap{
+        text-align: center;
+        padding-bottom: 15px;
+
+    }
+    .memberImg{
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            border: 1px #09661f solid;
+            display: flex;
+            overflow: hidden;
+            margin: 0 auto 15px auto;
+            justify-content: center;
+            align-items: center;
+    }
+
+    input[type=file] {
+        background: none;
+        border: none;
+        width: 200px;
+        margin: 0 auto;
+    }
+
+  .form {
+    width: 320px;
+    margin: 0 auto;
+    padding-bottom: 15px;
+
+    input {
+      width: 225px;
+      margin-left: 5px;
+    }
+  }
+  .oderLine {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px 0;
+    align-items: center;
+  }
+  .layoutWrap {
+    width: 250px;
+    display: flex;
+    flex-flow: column;
+  }
+  .oderLine .name {
+    display: inline-block;
+    width: 5em;
+    
+    text-align: right;
+    svg {
+      margin-right: 5px;
+      color: #ff9300;
+    }
+    
+  }
+
+  .uuidPrompt {
+    text-align: right;
+    font-size: 12px;
+    width: 240px;
+  }
+
+  .interText {
+    height: 100px;
+    margin-left: 10px;
+    background-color: #f7f7f7;
+    padding: 5px;
+    border: 1px #e5e5e5 solid;
+    box-sizing: border-box;
+    border-radius: 4px;
+    width:auto;
+    margin: 5px 10px 5px 10px;
+  }
+
+  .limit
+  {
+      margin-left: 10px;
+      margin-right: 10px;
+      text-align: right;
+  }
+
+  .verifyBtn {
+    background-color: #ff9300;
+    color: #fff;
+    margin-left: 5px;
+    margin-right: 15px;
+    border-radius: 4px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    padding: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    height: 30px;
+    align-self: flex-end;
+
+    svg{
+      margin-right: 5px;
+    }
+  }
+
+  .verifyCodeWrap {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    input {
+      width: 100px;
+      margin-top:0 ;
+      margin-bottom: 0;
+    }
+    .verifyBtn{
+        align-self: center;
+    }
+  }
+
+
+
+  /*----------國碼選單---------*/
+
+  
+}
+
+@media screen and (max-width: 340px) {
+  .MemberCon {
+    .oderLine {
+      flex-flow: column;
+    }
+    .oderLine .name {
+      text-align: left;
+      width: 100%;
+    }
+    .form {
+      width: 280px;
+      input {
+        margin-left: 0;
+        width: 100%;
+      }
+      .layoutWrap {
+        width: 100%;
+        .interText{
+            margin: 0;
+        }
+
+      }
+      .vue-country-intl {
+        margin-left: 0;
+      }
+      input[type="text"].perText.phone {
+        margin-left: 0px;
+      }
+    }
+    .uuidPrompt {
+      width: 100%;
+    }
+
+    .vue-country-intl .country-intl-input-wrap {
+      width: 100%;
+    }
+
+    .verifyBtn {
+        margin-right: 0;
+    }
+
+    .verifyCodeWrap input {
+        width: 70px;
+        margin-left: 10px;
+    }
+
+  }
+
+
+}

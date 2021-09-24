@@ -1,0 +1,50 @@
+<div>
+    <section class="SearchBar">
+        <div class="leftSide">
+            <div class="pageTitle">
+                <router-link to="Article" replace>
+                    <font-awesome-icon class="fontAwesomeIcon" :icon="['fa', 'chart-bar']" />
+                情报中心</router-link>
+            </div>
+            <div class="themeList">
+                <el-dropdown trigger="click">
+                    <span class="el-dropdown-link">
+                        足 球<i class="el-icon-arrow-down el-icon--right"></i>
+                    </span>
+                    <el-dropdown-menu slot="dropdown">
+                        <el-dropdown-item>籃球</el-dropdown-item>
+                        <el-dropdown-item>網球</el-dropdown-item>
+                        <el-dropdown-item>電競</el-dropdown-item>
+                    </el-dropdown-menu>
+                </el-dropdown>
+            </div>
+        </div>
+        <div class="rightSide">
+            <div class="searchBtn" @click="openScreen">
+                <font-awesome-icon class="fontAwesomeIcon" :icon="['fa', 'search']" />
+            </div>
+        </div>
+    </section>
+    <transition name="fade">
+    <section class="searchScreen" v-if="show">
+        <div class="close" @click="openScreen"> 
+            <font-awesome-icon class="fontAwesomeIcon" :icon="['fa', 'times']" />
+        </div>
+        <div class="searchDetail">
+            <p style="margin:0 5px; font-weight: 500;">分类</p>
+            <div class="searchClass">
+                <div>
+                    <el-radio-group v-model="radio" size="small">
+                      <el-radio-button label="SearchArticle" >文章</el-radio-button>
+                      <el-radio-button label="SearchAuther" >作者</el-radio-button>
+                      <el-radio-button label="SearchTeam" >队伍</el-radio-button>
+                      <el-radio-button label="SearchGame" >赛事</el-radio-button>
+                    </el-radio-group>
+                  </div>
+            </div>
+            <input class="saarchInput" type="text">
+            <el-button type="primary" @click="search" ><font-awesome-icon class="fontAwesomeIcon" :icon="['fa', 'search']" /> 搜寻</el-button>
+        </div>
+    </section>
+</transition>
+</div>

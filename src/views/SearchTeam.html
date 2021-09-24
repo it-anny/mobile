@@ -1,0 +1,45 @@
+<div class="ArticleWrap SearchTeam AllCon">
+
+    <Header>
+    </Header>
+    <SearchBar>
+    </SearchBar>
+    <main class="ArticleMainCon clearfix">
+
+        <p class="SearchResult">搜索到 关键字"<span class="highlight">米兰</span>"的队伍 5个結果</p>
+
+
+        <div class="contents">
+
+            <div class="teamItmeWrap" v-for="(item,i) in testData">
+                <div class="doc">
+                    <div class="logo">
+                        <img src="../assets/20180920160314.gif">
+                    </div>
+                    <div class="inf">
+                        <p class="name">國際米蘭</p>
+                        <p class="databtn">球队数据</p>
+                    </div>
+                </div>
+                <div class="articleListWrpa">
+                    <ul class="articleList">
+                        <li v-for="(article,j) in item.article">{{ article.title }} <span class="date">({{ article.created_at }})</span></li>
+                    </ul>
+                </div>
+                <div class="showMore" @click="openList($event,i)">
+                    <font-awesome-icon class="fontAwesomeIcon" :icon="['fa', 'angle-down']" /> 展開全部
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+
+    </main>
+    <Footer>
+
+    </Footer>
+</div>

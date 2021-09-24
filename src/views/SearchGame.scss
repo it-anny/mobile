@@ -1,0 +1,117 @@
+
+
+.SearchGame{
+
+    .SearchResultGames{
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .games{
+        .SearchResultGames{
+            margin-top: 45px;
+            margin-bottom: 25px;
+        }
+    }
+
+    .leagueItmeWrap{
+        box-shadow: 0 0 5px rgb(0 0 0 / 27%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 55px 10px 15px 10px;
+        background-color: #fff;
+        border-radius: 4px;
+        flex-flow: column;
+        padding: 10px;
+        
+    }
+
+    .leagueLogo{
+        width: 83px;
+    height: 83px;
+    border-radius: 50%;
+    background: #fff;
+    padding: 7px;
+    overflow: hidden;
+    box-shadow: #000 0 0 5px;
+    position: relative;
+    margin: 8px;
+    margin-top: -41px;
+    }
+
+    .name{
+        color: #333333;
+    }
+
+ 
+    .btnWrap{
+        margin-bottom: 0;
+
+    }
+
+    .AutherData ,.LeagueArticle{
+        width: calc(50% - 5px);
+        background-color: #EFEFEF;
+        padding: 7px;
+        border-radius: 5px;
+        text-align: center;
+        margin-top:10px;
+        cursor: pointer;
+
+        a{
+            color: #333333;
+        }
+
+    }
+    .AutherData:hover ,.LeagueArticle:hover{
+        background-color: #FF9300;
+        a{
+        color:#fff
+    }
+    }
+
+    .AutherData{
+        margin-right: 10px;
+        
+    }
+
+    .gameItmeWrap{
+        box-shadow: 0 0 5px rgb(0 0 0 / 27%);
+        padding: 10px;
+        margin: 35px 10px 15px 10px;
+        border-radius: 5px;
+        background-color: #fff;
+    }
+
+    .gameItmeWrap:nth-child(2){
+        margin-top:15px;
+    }
+
+    .teams{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+
+    .vs{
+        width: 24px;
+        text-align: center;
+    }
+    .team{
+        width: 45px;
+        margin-bottom: 5px;
+
+    }
+
+    .teamWrap{
+        width: calc( 50% - 12px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+    }
+
+}

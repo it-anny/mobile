@@ -1,0 +1,42 @@
+<div class="MemberWrap AllCon">
+
+    <Header>
+    </Header>
+    <main class="MemberCon clearfix">
+        <div class="pageTitle">
+            <font-awesome-icon class="fontAwesomeIcon" :icon="['far', 'user']" />
+            <router-link to="MemberIndex">會員專區</router-link><font-awesome-icon :class="" :icon="['fa', 'chevron-right']"/>修改密碼
+        </div>
+        <div class="con">
+            <BasicInf>
+            </BasicInf>
+                <p class="mamberTit">修改密碼 </p>
+                <div class="changePsWrap">
+                    <p>输入旧密码 <input type="password"></p>
+                    <p>输入新密码 <input type="password"></p>
+                    <p>再次输入新密码 <input type="password"></p>
+                    <div class="psRuleWrap">
+                        <div class="exclamation-icon">
+                            <font-awesome-icon :class="" :icon="['fa', 'exclamation']"/>
+                        </div>
+                        <div class="psRule">密码长度为6-25位，密码最少使用2种字符组合
+                            <br>(字符包括字母，数字，特殊字符)</div>
+                    </div>
+                    <div class="btnWrap">
+                        <button class="changePsEmpty" @click="">清空重填</button>
+                        <button class="changePsSubmit" @click="">送 出</button>
+                    </div>
+                </div>
+
+
+
+
+
+        </div>
+
+
+    </main>
+    <Footer>
+
+    </Footer>
+</div>

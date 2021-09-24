@@ -1,0 +1,81 @@
+<div class="MemberWrap AllCon">
+
+    <Header>
+    </Header>
+    <main class="MemberCon clearfix">
+        <div class="pageTitle">
+            <font-awesome-icon class="fontAwesomeIcon" :icon="['far', 'user']" />
+            <router-link to="MemberIndex">會員專區</router-link>
+            </router-link>
+            <font-awesome-icon :class="" :icon="['fa', 'chevron-right']" />登入 / 註冊
+        </div>
+        <div class="con logInAndSignUp">
+
+            <el-tabs type="border-card">
+                <el-tab-pane label="登录">
+                    <span slot="label">
+                        <p class="mamberTit">登 录</p>
+                    </span>
+                    <input class="loginId" type="text" placeholder="输入email">
+                    <input class="loginPS" type="password" placeholder="输入密码">
+                    <button class="loginSubmit">登 录</button>
+                    <div class="thirdPartys">
+                        <p class="thirdPartysTit">第三方登录</p>
+                        <a href="#" class="google">
+                            <img class="thirdPartysLogo" src="../assets/logo-google.svg" width="30" height="30">
+                            google
+                        </a>
+                        <a href="#" class="facebook">
+                            <img class="thirdPartysLogo" src="../assets/logo-fb.svg" width="30" height="30">
+                            Facebook
+                        </a>
+                        <a href="#" class="zalo">
+                            <img class="thirdPartysLogo" src="../assets/logo-zalo.svg" width="62" height="30">
+                            zalo
+                        </a>
+                    </div>
+                    <div class="signUp">
+                        <!-- <router-link to="SignUp">
+                            <font-awesome-icon class="fontAwesomeIcon" :icon="['fas', 'arrow-right']" />
+                            註冊新帳號
+                        </router-link> -->
+                    </div>
+                </el-tab-pane>
+                <el-tab-pane label="註冊新帳號">
+
+                    <span slot="label">
+                        <p class="mamberTit">註冊新帳號</p>
+                    </span>
+                    <div class="emailVerificationGruop">
+                        <p class="emailGruop"><input class="signUpEmail" type="text" placeholder="输入email"><span
+                                class="highlight star">*</span></p>
+
+
+                        <button class="verificationCodeEmail verification">發送驗證碼</button>
+                    </div>
+                    <p class="signUpGruop"><input class="verificationCode" type="text" placeholder="驗證碼"><span
+                            class="highlight star">*</span></p>
+                    <p class="signUpGruop"><input class="signUpPs" type="password" placeholder="输入密码"><span
+                            class="highlight star">*</span></p>
+                    <div class="btnWrap">
+                        <button class="signUpEmpty">清空重填</button>
+                        <button class="signUpSubmit">註冊</button>
+
+                    </div>
+                </el-tab-pane>
+
+            </el-tabs>
+
+
+
+
+
+
+        </div>
+
+
+    </main>
+    <Footer>
+
+    </Footer>
+</div>

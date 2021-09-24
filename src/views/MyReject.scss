@@ -1,0 +1,12 @@
+@import "../views/MemberIndex.scss";
+@import "../views/MemberPublish.scss";
+@import "../views/Article.scss";
+
+.MemberCon {
+  .rejectionReason {
+    margin-bottom: 10px;
+  }
+  .bottomBtn + .bottomBtn {
+    border-left: 1px solid #cecece;
+  }
+}

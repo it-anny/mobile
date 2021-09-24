@@ -1,0 +1,303 @@
+.ArticleWrap {
+  .topBanner {
+    border-radius: 5px;
+    margin: 10px;
+    overflow: hidden;
+    height: 100%;
+    position: relative;
+    max-height: 350px;
+
+    .topBannerBg {
+      width: 100%;
+    }
+
+    .gradientBg {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      color: #fff;
+    }
+
+    .topBannerCon {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 999;
+      a {
+        color: #fff;
+      }
+    }
+
+    
+    .topInf {
+      margin-left: 35px;
+      border-left: 1px solid;
+    }
+    .type {
+      width: auto;
+      text-align: left;
+      padding: 5px 35px 5px 15px;
+      position: relative;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      background: #ff9300;
+      display: inline-block;
+    }
+
+    .homeTeam,
+    .awayTeam {
+      display: flex;
+      flex-flow: row;
+      align-items: center;
+      justify-items: left;
+      padding-left: 15px;
+      margin-bottom: 10px;
+      text-shadow: 0 0 5px #000;
+    }
+    .homePic,
+    .awayPic {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: #fff;
+      padding: 7px;
+      overflow: hidden;
+      box-shadow: #000 0 0 5px;
+      position: relative;
+      margin-right: 10px;
+    }
+
+    .title {
+      font-size: 1.2em;
+      margin-left: 35px;
+      margin-right: 15px;
+      font-weight: 600;
+      margin-top: 15px;
+      text-shadow: 0 0 3px #000;
+    }
+    .autherInf {
+      display: flex;
+      margin-left: 35px;
+      margin-top: 10px;
+    }
+    .photo {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: 10px;
+    }
+  }
+  .articleItem {
+    margin: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.267);
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+
+    .mobileMainImg {
+      width: auto;
+      max-width: 740px;
+      min-width: 300px;
+      min-height: 160px;
+
+      border-radius: 4px 4px 0 0;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .mainColor {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .bgImg {
+      background-image: url(../assets/main_banner_bg-2.png);
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center 45px;
+      background-size: 105%;
+      filter: opacity(0.5);
+      position: absolute;
+    }
+
+    .leagueImagBg {
+      top: calc(50% - 80px);
+      left: calc(50% - 60px);
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      position: absolute;
+      filter: blur(5px);
+      z-index: 99;
+      overflow: hidden;
+      img {
+        width: 100%;
+      }
+    }
+    .teams {
+      z-index: 999;
+      position: relative;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      align-self: center;
+      width: 100%;
+      flex-flow: column;
+      top: -10px;
+      background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(0, 0, 0, 0.62),
+          transparent
+        )
+        no-repeat;
+      background-size: 100% 20%;
+      background-position: 0 48%;
+    }
+
+    .mobileMainImg {
+      display: block;
+      color: #fff;
+      position: relative;
+      display: flex;
+      .teamWrap {
+        align-items: center;
+        flex-flow: column;
+        margin-top: 18px;
+        margin-bottom: 15px;
+        p {
+          width: calc(100% - 38px);
+        }
+      }
+      .teamWrap:first-child {
+        justify-content: flex-end;
+      }
+      .teamWrap:last-child {
+        justify-content: flex-start;
+      }
+    }
+
+    .teamWrap {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      width: calc(50% - 12px);
+    }
+    .team {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: #fff;
+      padding: 7px;
+      overflow: hidden;
+      box-shadow: #000 0 0 5px;
+      position: relative;
+      margin: 8px;
+    }
+
+    .logos {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+      margin-bottom: 25px;
+    }
+
+    .vs {
+      width: 24px;
+      text-align: center;
+      position: relative;
+    }
+    .layer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      padding: 5px;
+      color: #fff;
+      text-align: center;
+      box-sizing: border-box;
+    }
+    .con {
+      background-color: #fff;
+      padding: 10px;
+      border-radius: 0 0 5px 5px;
+      .title {
+        font-size: 1.2em;
+        color: #6d6d6d;
+        font-weight: 700;
+        margin: 0px 0 10px 0;
+        display: block;
+      }
+      .autherInf {
+        font-size: 0.8em;
+        border-left: 7px #09661f solid;
+        padding-left: 10px;
+      }
+      
+      .changeLan{
+        margin-top: 5px;
+        display: flex;
+        
+        .fontAwesomeIcon{
+          background-color: rgb(43, 163, 191) ;
+          color: #fff;
+          border-radius:2px ;
+          padding: 3px;
+          margin-right: 5px;
+          
+        }
+      }
+      .visits {
+        display: inline-block;
+        margin-left: 10px;
+      }
+    }
+    .lock {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      font-size: 12px;
+      border: 2px #ff9300 solid;
+      border-radius: 50%;
+      width: 1.6em;
+      height: 1.6em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #ff9300;
+      margin-left: 5px;
+    }
+    .addToFav {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      width: 30px;
+      height: 30px;
+      border-radius: 4px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff;
+      z-index: 999;
+      color: #333333;
+    }
+
+    .addToFav:hover {
+      background-color: #ff9300;
+      color: #fff;
+    }
+  }
+}

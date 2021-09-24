@@ -1,0 +1,183 @@
+<div class="MemberWrap AllCon">
+
+    <Header>
+    </Header>
+    <main class="MemberCon clearfix">
+        <div class="pageTitle">
+            <font-awesome-icon class="fontAwesomeIcon" :icon="['far', 'user']" />
+            <router-link to="MemberIndex">會員專區</router-link>
+            <font-awesome-icon :class="" :icon="['fa', 'chevron-right']" /><router-link to="MemberPublish">文章管理</router-link>
+            <font-awesome-icon :class="" :icon="['fa', 'chevron-right']" />新增文章
+        </div>
+        <div class="con publish">
+            <BasicInf>
+            </BasicInf>
+
+
+            <p class="mamberTit">新增文章</p>
+            <div class="newArticleForm">
+                <div class="item gameChoice">
+                    <span class="itemTit">赛事</span>
+                    <div class="itemForm">
+                        <input type="text" value="">
+                        <el-button class="itemBtn" type="text" @click="dialogVisible = true">選擇</el-button>
+                    </div>
+                </div>
+                <div class="item tollPoint">
+                    <span class="itemTit">收费</span>
+                    <div class="itemForm">
+                        <el-radio v-model="radio_1" label="A" class="toll">是</el-radio>
+                        <el-input placeholder="" class="pointInput"></el-input> 点
+                        <el-radio v-model="radio_1" label="B" class="free">否</el-radio>
+                    </div>
+                </div>
+                <div class="item articleTitle">
+                    <span class="itemTit">标 题</span>
+                    <div class="itemForm">
+                        <input type="text" value="" placeholder="*35个字之内">
+                    </div>
+                </div>
+
+                <el-collapse v-model="activeNames" accordion>
+                    <el-collapse-item title="主队分析" name="1">
+                        <div class="item analysisGroup">
+                            <div class="itemForm">
+                                <textarea class="homeAnalysis"></textarea>
+                            </div>
+                        </div>
+                    </el-collapse-item>
+                    <el-collapse-item title="客队分析" name="2">
+                        <div class="item analysisGroup">
+                            <div class="itemForm">
+                                <textarea class="awayAnalysis"></textarea>
+                            </div>
+                        </div>
+                    </el-collapse-item>
+                    <el-collapse-item title="综合分析" name="3">
+                        <div class="item analysisGroup">
+                            <div class="itemForm">
+                                <textarea class="comprehensiveAnalysis"></textarea>
+                            </div>
+                        </div>
+                    </el-collapse-item>
+                </el-collapse>
+
+                <div class="item articleLan">
+                    <span class="itemTit">語 系</span>
+                    <div class="itemForm">
+                        <el-button-group>
+                            <div class="butBorder">
+                                <el-button type="primary" plain>简</el-button>
+                            </div>
+                            <div class="butBorder">
+                                <el-button type="primary" plain>EN</el-button>
+                            </div>
+                            <div class="butBorder">
+                                <el-button type="primary" plain>VN</el-button>
+                            </div>
+                        </el-button-group>
+                    </div>
+                </div>
+                <div class="item winningPrediction">
+                    <span class="itemTit">勝負預測</span>
+                    <div class="itemForm">
+                        <el-radio-group v-model="result_1">
+                            <el-radio-button label="1">主队勝</el-radio-button>
+                            <el-radio-button label="2">客队勝</el-radio-button>
+                            <el-radio-button label="3">和 局</el-radio-button>
+                        </el-radio-group>
+                    </div>
+                </div>
+                <div class="item recommend">
+                    <span class="itemTit">推荐玩法</span>
+                    <div class="itemForm">
+                        <el-tabs type="border-card">
+                            <el-tab-pane label="大小球">
+                                <span slot="label">
+                                    <el-radio v-model="radio_2" label="1">大小球</el-radio>
+                                </span>
+                                <div class="recommendCon playRule_1">
+                                    <div class="recommendOptions">大或小：
+                                        <el-radio-group v-model="result_2">
+                                            <el-radio-button label="1">大</el-radio-button>
+                                            <el-radio-button label="2">小</el-radio-button>
+                                        </el-radio-group>
+                                    </div>
+                                    <div class="recommendOptions">推荐盤口：
+                                        <el-radio-group v-model="result_3">
+                                            <el-radio-button size="medium" label="1">2</el-radio-button>
+                                            <el-radio-button size="medium" label="2">2/2.5</el-radio-button>
+                                            <el-radio-button size="medium" label="3">2.5</el-radio-button>
+                                            <el-radio-button size="medium" label="4">2.5/3</el-radio-button>
+                                        </el-radio-group>
+                                    </div>
+                                </div>
+                            </el-tab-pane>
+                            <el-tab-pane label="让 分">
+                                <span slot="label">
+                                    <el-radio v-model="radio_2" label="2">让 分</el-radio>
+                                </span>
+                                <div class="recommendCon playRule_2">
+                                    <div class="recommendOptions">队　伍：
+                                        <el-radio-group v-model="result_4">
+                                            <el-radio-button label="1">主队</el-radio-button>
+                                            <el-radio-button label="2">客队</el-radio-button>
+                                        </el-radio-group>
+                                    </div>
+                                    <div class="recommendOptions">分　数：
+                                        <el-radio-group v-model="result_5">
+                                            <el-radio-button size="medium" label="1">1</el-radio-button>
+                                            <el-radio-button size="medium" label="2">2</el-radio-button>
+                                            <el-radio-button size="medium" label="3">3</el-radio-button>
+                                            <el-radio-button size="medium" label="4">4</el-radio-button>
+                                        </el-radio-group>
+                                    </div>
+                                </div>
+                            </el-tab-pane>
+                            <el-tab-pane label="波 胆">
+                                <span slot="label">
+                                    <el-radio v-model="radio_2" label="3">波 胆</el-radio>
+                                </span>
+                                <div class="recommendCon playRule_3">
+                                    主队 <input type="text" class="correctScoreHome"> VS <input type="text"
+                                        class="correctScoreAway"> 客队
+                                </div>
+                            </el-tab-pane>
+                        </el-tabs>
+    
+                    </div>
+                    <div class="btnWrap"><button class="publishEmpty">預 覽</button><button class="publishEmpty">清
+                            空</button><button class="publishSubmit">送出核审</button><button class="publishDraft">存成草稿</button>
+                    </div>
+    
+                </div>
+            </div>
+
+        </div>
+
+
+    </main>
+    <Footer>
+
+    </Footer>
+    <el-dialog title="赛 事" :visible.sync="dialogVisible">
+        <el-select v-model="value" placeholder="联赛类型">
+            <el-option v-for="item in options1" :key="item.value" :label="item.label" :value="item.value">
+            </el-option>
+        </el-select>
+        <el-select v-model="value" placeholder="赛事">
+            <el-option v-for="item in options2" :key="item.value" :label="item.label" :value="item.value">
+            </el-option>
+        </el-select>
+        <el-select v-model="value" filterable placeholder="比赛">
+            <el-option v-for="item in options3" :key="item.value" :label="item.label" :value="item.value">
+            </el-option>
+        </el-select>
+
+        <span slot="footer" class="dialog-footer">
+            <el-button @click="dialogVisible = false">取 消</el-button>
+            <el-button type="primary" @click="dialogVisible = false">确 定</el-button>
+        </span>
+    </el-dialog>
+
+</div>

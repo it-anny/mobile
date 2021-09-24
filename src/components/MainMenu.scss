@@ -1,0 +1,180 @@
+
+.mainMenuWrap {
+  position: fixed;
+
+  a{
+    color:#fff
+  }
+  .mainMenu {
+    color: #fff;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.85);
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    padding: 35px 50px;
+    display: flex;
+    flex-flow: column;
+    box-sizing: border-box;
+    font-size: 1.2em;
+    font-weight: 700;
+    
+    // transition: all .5s ease-in-out;
+
+    .Home {
+      border-bottom: 1px #fff solid;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column;
+      padding: 15px;
+    }
+
+    .homeWrap {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 10px;
+
+      .fontAwesomeIcon {
+        color: #2f3635;
+        font-size: 2em;
+      }
+    }
+
+    .ThemeList {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column;
+      border-bottom: 1px #fff solid;
+      padding-bottom: 25px;
+
+      .title {
+        margin: 5px;
+        text-align: center;
+        width: 100%;
+        margin: 15px 15px 20px 15px;
+      }
+      .Theme {
+        display: flex;
+        width: 100%;
+        .item {
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          flex-flow: column;
+          flex: 1;
+          cursor: pointer;
+          a{
+            display:block;
+          }
+        }
+        .fontAwesomeIcon {
+          font-size: 2em;
+          margin-bottom: 5px;
+        }
+      }
+    }
+    .Term {
+      display: flex;
+      justify-content: center;
+
+      .inf {
+        border-right: 1px #fff solid;
+      }
+
+      .inf,
+      .menber {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+
+      .fontAwesomeIcon {
+        font-size: 2em;
+        margin-bottom: 5px;
+      }
+    }
+    .Lan {
+      font-size: 0.8em;
+      border-top: 1px #fff solid;
+      display: flex;
+      padding-top: 15px;
+      justify-content: space-evenly;
+      color: rgba(255, 255, 255, 0.5);
+
+      .SC,
+      .EN,
+      .TV {
+        padding: 3px 5px;
+        border: 1px rgba(255, 255, 255, 0.5) solid;
+      }
+
+      .SC,
+      .EN,
+      .TV {
+        &:hover {
+          color: #fff;
+          border: 1px #fff solid;
+        }
+      }
+
+      .active {
+        color: #fff;
+        border: 1px #fff solid;
+      }
+    }
+  }
+  .mainMenu.show{
+    opacity: 1;
+    transition: all .5s ease-in-out;
+    display:block;
+
+  }
+
+  .footInMenu{
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    font-size: 1.2em;
+    width:calc(100% + 100px);
+  
+    .appIcon {
+      margin: 25px 15px 15px 15px;
+      width: 90px;
+      filter: drop-shadow(0 0 5px #000);
+      float: left;
+    }
+  
+    .bottomBarW {
+      padding-top: 25px;
+      font-size: 1.4em;
+      color: rgb(252, 252, 252);
+      font-weight: 500;
+    }
+  
+    .bottomBarG {
+      padding-top: 8px;
+      background-color: #09661f;
+      height: 55px;
+      color: #fff;
+    }
+  }
+}
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}

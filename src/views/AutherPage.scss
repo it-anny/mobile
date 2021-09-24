@@ -1,0 +1,77 @@
+
+@import "../views/Article.scss";
+
+.AutherPage{
+
+
+    .doc{
+        background-color: #fff;   
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        box-shadow: 0 0 5px rgba(0,0,0,.25);
+        flex-wrap: wrap;
+        .leftSide{
+            display: flex;
+        }
+    
+        .rightSide{
+            color:#FF9300;
+            text-align: center;
+        }
+    }
+
+
+    .autherPhoto{
+        width: 72px;
+        height: 72px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 0 10px;
+        border:solid 1px #09661F;
+    }
+
+    .name{
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .percent{
+        font-size: 18px;
+        display: block;
+        line-height: 18px;
+    }
+
+    .percent ,.percentCopy{
+        font-weight: 700;
+    }
+
+    .follow {
+        border:1px solid #BCBCBC;
+        background-color: #fff;
+        width: auto;
+        border-radius: 4px;
+        padding:5px 12px;
+        letter-spacing: 0.2em;
+        margin: 0 5px;
+        color: #000;
+
+        .fontAwesomeIcon{
+            margin-right: 3px;
+        }
+    }
+
+    .follow:hover{
+        background-color: #FF9300;
+        color: #fff;
+    }
+
+    .introductionWrap{
+        width: 100%;
+        margin-top: 15px ;
+        margin-bottom: 10px;
+        padding-top:15px ;
+        border-top: 1px #ccc solid;
+    }
+
+}

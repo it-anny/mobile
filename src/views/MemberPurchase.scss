@@ -1,0 +1,14 @@
+
+@import "../views/MemberIndex.scss";
+@import "../views/Article.scss";
+
+.MemberCon {
+  .con {
+    background: none;
+    box-shadow: none;
+    border-bottom:none;
+  }
+  .basicInf {
+    background-color: #fff;
+  }
+}
